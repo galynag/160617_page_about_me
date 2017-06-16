@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Col, Row, Input, Button} from 'react-materialize';
+import FaBeer from 'react-icons/lib/fa/beer';
 
 export default class BookList extends Component {
     state = {
@@ -90,6 +91,7 @@ export default class BookList extends Component {
                                     onChange={this.valueInput}
                             />
                             <Button m="6" s={12} className="#757575 grey darken-1" waves='light'>Search</Button>
+                            <FaBeer className="sn-links"/>
                         </Row>
 
                             { loading ? this.renderLoading() : this.renderPosts()}

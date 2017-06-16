@@ -96,3 +96,6 @@ nav ul a:hover {
     display: block;
     margin: 5px auto;
 }
+.sn-links:hover {
+    transform: scale(1.1) rotate(0.5turn);
+}
