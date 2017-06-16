@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+}
+.app {
+  display: flex;
+}
+main div h1 {
+    text-align: center;
+}
+aside.primary-aside {
+  width: 200px;
+}
+
+aside.primary-aside a.active {
+    font-weight: bold;
+}
+
+main {
+  flex: 1;
+}
+.logo {
+    width: 16%;
+    display: inline-block;
+    float: left;
+}
+.logo::after, .logo::before {
+    content: '';
+    clear: both;
+    display: block;
+}
+#box-logo {
+    position: relative;
+    margin: 30px auto;
+    height: 20em;
+}
+#logo {
+    width: 40%;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#logo2 {
+    width: 48.5%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav-wrapper div ul li{
+    float: right;
+}
+.nav-wrapper div ul {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.nav-wrapper {
+    padding-left: 10%;
+}
+nav ul a:hover {
+    background-color: greenyellow;
+    color: black;
+}
+.active-button {
+    background: gold;
+    color: black;
+}
+.searchInput {
+    text-align: center;
+}
+.w100of-box {
+    height: 15em;
+    display: block;
+    margin: 10px auto;
+}
+.listApi div {
+    vertical-align: top;
+}
+.bold {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.full-description {
+    display: none;
+}
+.btn-more {
+    display: block;
+    margin: 5px auto;
+}
