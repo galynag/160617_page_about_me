@@ -1,3 +1,7 @@
+/**
+ * Created by Galina on 17.06.2017.
+ */
+
 import React, {Component} from 'react';
 import Header from './Header';
 import FooterComponent from './FooterComponent'

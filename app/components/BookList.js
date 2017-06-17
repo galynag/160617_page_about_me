@@ -1,6 +1,9 @@
+/**
+ * Created by Galina on 17.06.2017.
+ */
 import React, {Component} from 'react';
 import axios from 'axios';
-import {Col, Row, Input, Button} from 'react-materialize';
+import {Col, Row, Input, Button, Preloader} from 'react-materialize';
 import FaBeer from 'react-icons/lib/fa/beer';
 
 export default class BookList extends Component {
@@ -14,7 +17,7 @@ export default class BookList extends Component {
         this.setState({search: e.target.value})
     };
     componentDidMount () {
-        axios.get(`https://www.googleapis.com/books/v1/volumes?q=${this.state.search}&key=AIzaSyCDy-A1SQbLzpDYPzCrm2xf-8VIeFoD_gU`)
+        axios.get(`https://www.googleapis.com/books/v1/volumes?q=${this.state.search}&key=AIzaSyA7gjbadpyT8hPDfVfPUpbZFkhKwfi_C0A`)
             .then(res => {
                 this.setState({
                     books: res.data.items,
@@ -31,7 +34,11 @@ export default class BookList extends Component {
     }
     renderLoading() {
         return (
-            <div>Loading...</div>
+            <Row>
+                <Col s={4}>
+                    <Preloader flashing/>
+                </Col>
+            </Row>
         );
     }
     renderError() {
@@ -84,14 +91,11 @@ export default class BookList extends Component {
                             <Input m="6" s={12}
                                    className="searchInput"
                                     type="text"
-                                    placeholder= "Enter text for filter. Now books filtered by word 'react'"
                                     label="Enter text for filter. Now books filtered by word 'react'"
-                                    defaultValue=''
                                     value={this.state.search}
                                     onChange={this.valueInput}
                             />
                             <Button m="6" s={12} className="#757575 grey darken-1" waves='light'>Search</Button>
-                            <FaBeer className="sn-links"/>
                         </Row>
 
                             { loading ? this.renderLoading() : this.renderPosts()}
