@@ -3,8 +3,7 @@
  */
 import React, {Component} from 'react';
 import {Row,Col,Icon,Input} from 'react-materialize';
-import FaCalendar from 'react-icons/lib/fa/calendar';
-import FaGithub from 'react-icons/lib/fa/github';
+
 
 export default class Contact extends Component {
     render() {
