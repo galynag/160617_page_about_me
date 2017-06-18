@@ -55586,15 +55586,11 @@
 	                thumbnail: 'http://lorempixel.com/250/150/nature/3/'
 	            }];
 	
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(_reactImageGallery2.default, {
-	                    items: images,
-	                    slideInterval: 2000,
-	                    onImageLoad: this.handleImageLoad
-	                })
-	            );
+	            return _react2.default.createElement(_reactImageGallery2.default, {
+	                items: images,
+	                slideInterval: 2000,
+	                onImageLoad: this.handleImageLoad
+	            });
 	        }
 	    }]);
 	

@@ -27,13 +27,13 @@ export default class Hobby extends Component {
             ];
 
             return (
-                <div>
+
                 <ImageGallery
                     items={images}
                     slideInterval={2000}
                     onImageLoad={this.handleImageLoad}
                 />
-                </div>
+
             );
         }
 
