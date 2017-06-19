@@ -113,6 +113,9 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 .input-field .prefix.active, label.active {
     color: #2196f3;
 }
+input[type=text]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label {
+    color: #2196f3;
+}
 
 .material-icons-content {
     font-size: 1.5rem;
